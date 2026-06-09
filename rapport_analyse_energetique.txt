@@ -1,0 +1,75 @@
+================================================================================
+RAPPORT DÉTAILLÉ D'ANALYSE ÉNERGÉTIQUE
+================================================================================
+Date de génération: 2025-06-16 17:15:41
+
+1. RÉSUMÉ DES DONNÉES
+------------------------------
+• Nombre total d'observations: 413,663
+• Période d'analyse: 2016-07-31 23:14:00 à 2016-08-31 22:59:06
+• Variable cible: Consommation élevée (seuil: 0)
+• Répartition des classes:
+  - Consommation normale: 356,268 (86.1%)
+  - Consommation élevée: 57,395 (13.9%)
+
+2. STATISTIQUES DESCRIPTIVES DE LA CONSOMMATION
+--------------------------------------------------
+• Moyenne: 2.60
+• Médiane: 0.00
+• Écart-type: 542.32
+• Minimum: 0.00
+• Maximum: 161017.06
+• Coefficient de variation: 20895.9%
+
+3. ANALYSE TEMPORELLE
+-------------------------
+• Heure de pic de consommation: 4h (50)
+• Heure de consommation minimale: 19h (0)
+• Jour de pic de consommation: Lundi (13)
+
+4. PERFORMANCE DES MODÈLES DE MACHINE LEARNING
+-------------------------------------------------------
+Classement des modèles (par F1-Score):
+ 1. Random Forest             | F1: 0.916 | Acc: 0.979 | AUC: 0.991
+ 2. LightGBM                  | F1: 0.894 | Acc: 0.974 | AUC: 0.989
+ 3. Gradient Boosting         | F1: 0.892 | Acc: 0.973 | AUC: 0.988
+ 4. Decision Tree             | F1: 0.881 | Acc: 0.969 | AUC: 0.963
+ 5. AdaBoost                  | F1: 0.783 | Acc: 0.946 | AUC: 0.971
+ 6. Deep Neural Network       | F1: 0.749 | Acc: 0.944 | AUC: 0.944
+ 7. XGBoost                   | F1: 0.589 | Acc: 0.917 | AUC: 0.952
+ 8. Logistic Regression       | F1: 0.522 | Acc: 0.891 | AUC: 0.870
+
+🏆 MEILLEUR MODÈLE: Random Forest
+   • F1-Score: 0.916
+   • Accuracy: 0.979
+   • Precision: 0.972
+   • Recall: 0.866
+   • AUC-ROC: 0.991
+   • Temps d'entraînement: 2.03s
+
+5. COMPARAISON MACHINE LEARNING vs DEEP LEARNING
+-------------------------------------------------------
+Machine Learning (moyenne):
+   • F1-Score moyen: 0.782
+   • Temps d'entraînement moyen: 5.27s
+   • Nombre de modèles: 7
+
+Deep Learning (moyenne):
+   • F1-Score moyen: 0.749
+   • Temps d'entraînement moyen: 26.75s
+   • Nombre de modèles: 1
+
+6. RECOMMANDATIONS
+--------------------
+✅ Performance excellente du modèle de prédiction
+• Forte variabilité de consommation détectée - Analyser les causes
+• Utiliser le modèle Random Forest pour les prédictions futures
+• Surveiller les périodes de consommation élevée identifiées
+
+7. CONCLUSION
+---------------
+L'analyse de 413,663 observations révèle des patterns de consommation
+énergétique avec une capacité de prédiction de 91.6% (F1-Score).
+Le modèle Random Forest est recommandé pour les prédictions opérationnelles.
+
+================================================================================
